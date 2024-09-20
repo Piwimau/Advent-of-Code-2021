@@ -110,7 +110,8 @@ reading and parsing the input, but not the time for printing the final result.
 
 | Day                 | Min      | Max      | Mean     | Median   | Standard Deviation |
 |---------------------|----------|----------|----------|----------|--------------------|
-| Day 1 - Sonar Sweep | 0.0601ms | 0.0639ms | 0.0617ms | 0.0617ms | 0.001ms            |
+| Day 1 - Sonar Sweep | 0.0601ms | 0.0639ms | 0.0617ms | 0.0617ms | 0.0010ms           |
+| Day 2 - Dive!       | 0.1090ms | 0.1127ms | 0.1105ms | 0.1105ms | 0.0010ms           |
 
 ## License
 
