@@ -48,9 +48,9 @@ Day 2 - Dive!/
 ...
 Day 25 - Sea Cucumber/
 .gitignore
+Advent of Code 2021.sln
 LICENSE
 README.md
-Advent of Code 2021.sln
 ```
 
 At the top level, the [solution file](Advent+of+Code+2021.sln) contains 25 standalone projects
@@ -104,11 +104,13 @@ Alternatively, if you have Visual Studio installed on your machine, simply open 
 ## Benchmarks
 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
-[BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package. They were done on my main
-machine (Intel Core i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2.
+[BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
+i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spend for
+reading and parsing the input, but not the time for printing the final result.
 
-| Day                 | Mean Runtime (± Standard Deviation) |
-|---------------------|-------------------------------------|
+| Day                 | Min      | Max      | Mean     | Median   | Standard Deviation |
+|---------------------|----------|----------|----------|----------|--------------------|
+| Day 1 - Sonar Sweep | 0.0601ms | 0.0639ms | 0.0617ms | 0.0617ms | 0.001ms            |
 
 ## License
 
