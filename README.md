@@ -108,10 +108,11 @@ Finally, here are some (non-scientific) benchmarks I created using the fantastic
 i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spend for
 reading and parsing the input, but not the time for printing the final result.
 
-| Day                 | Min      | Max      | Mean     | Median   | Standard Deviation |
-|---------------------|----------|----------|----------|----------|--------------------|
-| Day 1 - Sonar Sweep | 0.0601ms | 0.0639ms | 0.0617ms | 0.0617ms | 0.0010ms           |
-| Day 2 - Dive!       | 0.1090ms | 0.1127ms | 0.1105ms | 0.1105ms | 0.0010ms           |
+| Day                       | Min       | Max       | Mean      | Median    | Standard Deviation  |
+|---------------------------|-----------|-----------|-----------|-----------|---------------------|
+| Day 1 - Sonar Sweep       | 0.0601 ms | 0.0639 ms | 0.0617 ms | 0.0617 ms | 0.00099 ms          |
+| Day 2 - Dive!             | 0.1090 ms | 0.1127 ms | 0.1105 ms | 0.1105 ms | 0.00099 ms          |
+| Day 3 - Binary Diagnostic | 0.0841 ms | 0.0862 ms | 0.0854 ms | 0.0855 ms | 0.00053 ms          |
 
 ## License
 
