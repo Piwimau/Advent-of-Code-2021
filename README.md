@@ -106,13 +106,14 @@ Alternatively, if you have Visual Studio installed on your machine, simply open 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
 [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
 i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spend for
-reading and parsing the input, but not the time for printing the final result.
+reading the input from disk and parsing it, but not the time for printing the final result.
 
-| Day                       | Min       | Max       | Mean      | Median    | Standard Deviation  |
-|---------------------------|-----------|-----------|-----------|-----------|---------------------|
-| Day 1 - Sonar Sweep       | 0.0601 ms | 0.0639 ms | 0.0617 ms | 0.0617 ms | 0.00099 ms          |
-| Day 2 - Dive!             | 0.1090 ms | 0.1127 ms | 0.1105 ms | 0.1105 ms | 0.00099 ms          |
-| Day 3 - Binary Diagnostic | 0.0841 ms | 0.0862 ms | 0.0854 ms | 0.0855 ms | 0.00053 ms          |
+| Day                       | Min       | Max       | Mean      | Median    | Standard Deviation |
+|---------------------------|-----------|-----------|-----------|-----------|--------------------|
+| Day 1 - Sonar Sweep       | 0.0601 ms | 0.0639 ms | 0.0617 ms | 0.0617 ms | 0.00099 ms         |
+| Day 2 - Dive!             | 0.1090 ms | 0.1127 ms | 0.1105 ms | 0.1105 ms | 0.00099 ms         |
+| Day 3 - Binary Diagnostic | 0.0841 ms | 0.0862 ms | 0.0854 ms | 0.0855 ms | 0.00053 ms         |
+| Day 4 - Giant Squid       | 1.6050 ms | 1.6390 ms | 1.6220 ms | 1.6220 ms | 0.00920 ms         |
 
 ## License
 
