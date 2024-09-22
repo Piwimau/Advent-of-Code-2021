@@ -108,13 +108,14 @@ Finally, here are some (non-scientific) benchmarks I created using the fantastic
 i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spend for
 reading the input from disk and parsing it, but not the time for printing the final result.
 
-| <center>Day</center>         | <center>Min</center> | <center>Max</center> | <center>Mean</center> | <center>Median</center> | <center>Standard Deviation</center> |
-|:-----------------------------|---------------------:|---------------------:|----------------------:|------------------------:|------------------------------------:|
-| Day 1 - Sonar Sweep          |             0.060 ms |             0.063 ms |              0.061 ms |                0.061 ms |                            0.001 ms |
-| Day 2 - Dive!                |             0.109 ms |             0.112 ms |              0.110 ms |                0.110 ms |                            0.001 ms |
-| Day 3 - Binary Diagnostic    |             0.084 ms |             0.086 ms |              0.085 ms |                0.085 ms |                            0.001 ms |
-| Day 4 - Giant Squid          |             1.605 ms |             1.639 ms |              1.622 ms |                1.622 ms |                            0.009 ms |
-| Day 5 - Hydrothermal Venture |            13.532 ms |            13.881 ms |             13.734 ms |               13.740 ms |                            0.094 ms |
+| Day                          | Min       | Max       | Mean      | Median    | Standard Deviation |
+|------------------------------|-----------|-----------|-----------|-----------|--------------------|
+| Day 1 - Sonar Sweep          |  0.060 ms |  0.063 ms |  0.061 ms |  0.061 ms | 0.001 ms           |
+| Day 2 - Dive!                |  0.109 ms |  0.112 ms |  0.110 ms |  0.110 ms | 0.001 ms           |
+| Day 3 - Binary Diagnostic    |  0.084 ms |  0.086 ms |  0.085 ms |  0.085 ms | 0.001 ms           |
+| Day 4 - Giant Squid          |  1.605 ms |  1.639 ms |  1.622 ms |  1.622 ms | 0.009 ms           |
+| Day 5 - Hydrothermal Venture | 13.532 ms | 13.881 ms | 13.734 ms | 13.740 ms | 0.094 ms           |
+| Day 6 - Lanternfish          |  0.022 ms |  0.023 ms |  0.022 ms |  0.022 ms | 0.000 ms           |
 
 ## License
 
