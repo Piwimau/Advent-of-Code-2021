@@ -118,6 +118,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 6 - Lanternfish             |  0.022 ms |  0.023 ms |  0.022 ms |  0.022 ms | 0.000 ms           |
 | Day 7 - The Treachery of Whales |  3.289 ms |  3.381 ms |  3.335 ms |  3.341 ms | 0.033 ms           |
 | Day 8 - Seven Segment Search    |  0.176 ms |  0.183 ms |  0.180 ms |  0.180 ms | 0.002 ms           |
+| Day 9 - Smoke Basin             |  1.004 ms |  1.054 ms |  1.034 ms |  1.036 ms | 0.016 ms           |
 
 ## License
 
