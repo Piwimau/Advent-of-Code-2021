@@ -80,8 +80,8 @@ If you want to try one of my solutions, follow these steps below:
    ```
 
 2. Put your input for the day in a file called `input.txt` and copy it to the appropriate resources
-   directory. You can get all inputs from the official [website](https://adventofcode.com/2021) if
-   you have not already downloaded them.
+   directory. You can get all inputs from the [official website](https://adventofcode.com/2021) if
+   you have not downloaded them already.
    ```shell
    cp input.txt "./Day 1 - Sonar Sweep/Resources"
    ```
@@ -119,6 +119,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 7 - The Treachery of Whales |  3.289 ms |  3.381 ms |  3.335 ms |  3.341 ms | 0.033 ms           |
 | Day 8 - Seven Segment Search    |  0.176 ms |  0.183 ms |  0.180 ms |  0.180 ms | 0.002 ms           |
 | Day 9 - Smoke Basin             |  1.004 ms |  1.054 ms |  1.034 ms |  1.036 ms | 0.016 ms           |
+| Day 10 - Syntax Scoring         |  0.135 ms |  0.138 ms |  0.137 ms |  0.137 ms | 0.001 ms           |
 
 ## License
 
