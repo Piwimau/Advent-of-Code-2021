@@ -80,7 +80,8 @@ internal sealed class Program {
                     nameof(heights),
                     "The following sequence contains at least one invalid height value. "
                         + $"All height values must be in the range [{MinHeight}; {MaxHeight}]."
-                        + $"{Environment.NewLine}[{string.Join(", ", this.heights)}]");
+                        + $"{Environment.NewLine}[{string.Join(", ", this.heights)}]"
+                );
             }
             width = heights[0].Length;
             height = heights.Length;
@@ -167,7 +168,7 @@ internal sealed class Program {
 
         /// <summary>Returns all low positions in this <see cref="Heightmap"/>.</summary>
         /// <remarks>
-        /// A <see cref="Position"/> is considered to be a low if fully surrounded by larger height
+        /// A <see cref="Position"/> is considered to be low if fully surrounded by larger height
         /// values.
         /// <para></para>
         /// Note that this method is used to lazily initialize the <see cref="lowPositions"/> field,
