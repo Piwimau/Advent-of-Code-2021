@@ -121,6 +121,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 9 - Smoke Basin             |  1.004 ms |  1.054 ms |  1.034 ms |  1.036 ms | 0.016 ms           |
 | Day 10 - Syntax Scoring         |  0.135 ms |  0.138 ms |  0.137 ms |  0.137 ms | 0.001 ms           |
 | Day 11 - Dumbo Octopus          |  1.127 ms |  1.159 ms |  1.143 ms |  1.141 ms | 0.008 ms           |
+| Day 12 - Passage Pathing        | 38.544 ms | 39.815 ms | 39.132 ms | 39.048 ms | 0.372 ms           |
 
 ## License
 
