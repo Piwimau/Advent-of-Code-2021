@@ -20,7 +20,7 @@ internal sealed partial class Program {
         ImmutableArray<string> OutputDigits
     ) {
 
-        [GeneratedRegex("(?:[a-g]{2,} ){10}\\|(?: [a-g]{2,}){4}")]
+        [GeneratedRegex("^(?:[a-g]{2,} ){10}\\|(?: [a-g]{2,}){4}$")]
         private static partial Regex EntryRegex();
 
         /// <summary>Parses an <see cref="Entry"/> from a given string.</summary>

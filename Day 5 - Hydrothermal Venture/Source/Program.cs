@@ -23,7 +23,7 @@ internal sealed partial class Program {
         /// <summary>Determines whether this <see cref="Line"/> is diagonal (45° angle).</summary>
         public bool IsDiagonal => Math.Abs(Start.X - End.X) == Math.Abs(Start.Y - End.Y);
 
-        [GeneratedRegex("\\d+,\\d+ -> \\d+,\\d+")]
+        [GeneratedRegex("^\\d+,\\d+ -> \\d+,\\d+$")]
         private static partial Regex LineRegex();
 
         /// <summary>Parses a <see cref="Line"/> from a given string.</summary>

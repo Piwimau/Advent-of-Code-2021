@@ -46,7 +46,7 @@ internal sealed partial class Program {
             this.spots = [.. spots];
         }
 
-        [GeneratedRegex(" *\\d+ +\\d+ +\\d+ +\\d+ +\\d+")]
+        [GeneratedRegex("^ *\\d+ +\\d+ +\\d+ +\\d+ +\\d+$")]
         private static partial Regex LineRegex();
 
         /// <summary>Parses a <see cref="Board"/> from a given string.</summary>

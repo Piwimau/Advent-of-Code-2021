@@ -21,7 +21,7 @@ internal sealed partial class Program {
     /// <param name="Amount">Amount by which the <see cref="Command"/> should steer.</param>
     private readonly partial record struct Command(Direction Direction, int Amount) {
 
-        [GeneratedRegex("(?:forward|up|down) \\d+")]
+        [GeneratedRegex("^(?:forward|up|down) \\d+$")]
         private static partial Regex CommandRegex();
 
         /// <summary>Parses a <see cref="Command"/> from a given string.</summary>
