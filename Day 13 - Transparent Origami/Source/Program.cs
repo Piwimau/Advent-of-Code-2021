@@ -27,24 +27,19 @@ internal sealed partial class Program {
         /// </remarks>
         /// <param name="s">String to parse a <see cref="Position"/> from.</param>
         /// <returns>A <see cref="Position"/> parsed from the given string.</returns>
-        /// <exception cref="ArgumentNullException">
-        /// Thrown when <paramref name="s"/> is <see langword="null"/>.
-        /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">
         /// Thrown when <paramref name="s"/> has an invalid format.
         /// </exception>
-        public static Position Parse(string s) {
-            ArgumentNullException.ThrowIfNull(s, nameof(s));
-            ReadOnlySpan<char> span = s;
-            if (!PositionRegex().IsMatch(span)) {
+        public static Position Parse(ReadOnlySpan<char> s) {
+            if (!PositionRegex().IsMatch(s)) {
                 throw new ArgumentOutOfRangeException(
                     nameof(s),
                     $"The string \"{s}\" does not represent a valid position."
                 );
             }
-            int commaIndex = span.IndexOf(',');
-            int x = int.Parse(span[..commaIndex]);
-            int y = int.Parse(span[(commaIndex + 1)..]);
+            int commaIndex = s.IndexOf(',');
+            int x = int.Parse(s[..commaIndex]);
+            int y = int.Parse(s[(commaIndex + 1)..]);
             return new Position(x, y);
         }
 
@@ -80,23 +75,18 @@ internal sealed partial class Program {
         /// </remarks>
         /// <param name="s">String to parse an <see cref="Instruction"/> from.</param>
         /// <returns>An <see cref="Instruction"/> parsed from the given string.</returns>
-        /// <exception cref="ArgumentNullException">
-        /// Thrown when <paramref name="s"/> is <see langword="null"/>.
-        /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">
         /// Thrown when <paramref name="s"/> has an invalid format.
         /// </exception>
-        public static Instruction Parse(string s) {
-            ArgumentNullException.ThrowIfNull(s, nameof(s));
-            ReadOnlySpan<char> span = s;
-            if (!InstructionRegex().IsMatch(span)) {
+        public static Instruction Parse(ReadOnlySpan<char> s) {
+            if (!InstructionRegex().IsMatch(s)) {
                 throw new ArgumentOutOfRangeException(
                     nameof(s),
                     $"The string \"{s}\" does not represent a valid instruction."
                 );
             }
-            Direction direction = (span[DirectionIndex] == 'x') ? Direction.Left : Direction.Up;
-            int coordinate = int.Parse(span[CoordinateStartIndex..]);
+            Direction direction = (s[DirectionIndex] == 'x') ? Direction.Left : Direction.Up;
+            int coordinate = int.Parse(s[CoordinateStartIndex..]);
             return new Instruction(direction, coordinate);
         }
 
@@ -175,11 +165,11 @@ internal sealed partial class Program {
             .Split(Environment.NewLine + Environment.NewLine);
         ReadOnlySpan<Position> positions = [.. parts[0]
             .Split(Environment.NewLine)
-            .Select(Position.Parse)
+            .Select(line => Position.Parse(line))
         ];
         ReadOnlySpan<Instruction> instructions = [.. parts[1]
             .Split(Environment.NewLine)
-            .Select(Instruction.Parse)
+            .Select(line => Instruction.Parse(line))
         ];
         int dots = VisibleDots(positions, instructions[..1]).Count;
         Console.WriteLine($"{dots} dots are visible after executing just the first instruction.");
