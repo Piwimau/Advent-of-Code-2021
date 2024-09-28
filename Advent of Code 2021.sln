@@ -31,7 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 10 - Syntax Scoring", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 11 - Dumbo Octopus", "Day 11 - Dumbo Octopus\Day 11 - Dumbo Octopus.csproj", "{AFAEB285-53BE-43CF-B08B-CEAC58482518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 12 - Passage Pathing", "Day 12 - Passage Pathing\Day 12 - Passage Pathing.csproj", "{D54E6E7B-284B-4A58-AC59-49F4D6F5790A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 12 - Passage Pathing", "Day 12 - Passage Pathing\Day 12 - Passage Pathing.csproj", "{D54E6E7B-284B-4A58-AC59-49F4D6F5790A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 13 - Transparent Origami", "Day 13 - Transparent Origami\Day 13 - Transparent Origami.csproj", "{55E9336B-489A-47DB-B2D1-6194532D5192}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{D54E6E7B-284B-4A58-AC59-49F4D6F5790A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D54E6E7B-284B-4A58-AC59-49F4D6F5790A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D54E6E7B-284B-4A58-AC59-49F4D6F5790A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55E9336B-489A-47DB-B2D1-6194532D5192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55E9336B-489A-47DB-B2D1-6194532D5192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55E9336B-489A-47DB-B2D1-6194532D5192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55E9336B-489A-47DB-B2D1-6194532D5192}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
