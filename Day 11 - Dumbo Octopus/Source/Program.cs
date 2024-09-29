@@ -55,7 +55,7 @@ internal sealed class Program {
         /// Thrown when <paramref name="energyLevels"/> is <see langword="null"/>.
         /// </exception>
         /// <exception cref="ArgumentOutOfRangeException">
-        /// Thrown when <paramref name="energyLevels"/> contains an invalid energy levels.
+        /// Thrown when <paramref name="energyLevels"/> contains an invalid energy level.
         /// All energy levels must be in the range
         /// [<see cref="MinEnergyLevel"/>; <see cref="MaxEnergyLevel"/>].
         /// </exception>
