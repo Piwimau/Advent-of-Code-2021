@@ -39,6 +39,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 14 - Extended Polymeriz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 15 - Chiton", "Day 15 - Chiton\Day 15 - Chiton.csproj", "{A30BB7A9-7C0F-4BBF-82EC-44EBF802D32F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 16 - Packet Decoder", "Day 16 - Packet Decoder\Day 16 - Packet Decoder.csproj", "{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{A30BB7A9-7C0F-4BBF-82EC-44EBF802D32F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A30BB7A9-7C0F-4BBF-82EC-44EBF802D32F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A30BB7A9-7C0F-4BBF-82EC-44EBF802D32F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
