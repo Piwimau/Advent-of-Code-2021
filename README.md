@@ -126,6 +126,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 14 - Extended Polymerization |  0.186 ms |  0.192 ms |  0.189 ms |  0.190 ms | 0.002 ms           |
 | Day 15 - Chiton                  | 34.518 ms | 36.790 ms | 35.401 ms | 35.389 ms | 0.642 ms           |
 | Day 16 - Packet Decoder          |  0.040 ms |  0.041 ms |  0.040 ms |  0.040 ms | 0.000 ms           |
+| Day 17 - Trick Shot              |  0.617 ms |  0.628 ms |  0.623 ms |  0.623 ms | 0.003 ms           |
 
 ## License
 

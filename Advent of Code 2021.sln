@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 15 - Chiton", "Day 15 -
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 16 - Packet Decoder", "Day 16 - Packet Decoder\Day 16 - Packet Decoder.csproj", "{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 17 - Trick Shot", "Day 17 - Trick Shot\Day 17 - Trick Shot.csproj", "{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FFE4DB1-4B72-4177-8D91-8DCB56BECDE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
