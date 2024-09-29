@@ -105,7 +105,7 @@ Alternatively, if you have Visual Studio installed on your machine, simply open 
 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
 [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
-i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spend for
+i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spent for
 reading the input from disk and parsing it, but not the time for printing the final result.
 
 | Day                              | Min       | Max       | Mean      | Median    | Standard Deviation |
@@ -124,6 +124,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 12 - Passage Pathing         | 38.544 ms | 39.815 ms | 39.132 ms | 39.048 ms | 0.372 ms           |
 | Day 13 - Transparent Origami     |  0.146 ms |  0.149 ms |  0.148 ms |  0.148 ms | 0.001 ms           |
 | Day 14 - Extended Polymerization |  0.186 ms |  0.192 ms |  0.189 ms |  0.190 ms | 0.002 ms           |
+| Day 15 - Chiton                  | 34.518 ms | 36.790 ms | 35.401 ms | 35.389 ms | 0.642 ms           |
 
 ## License
 
