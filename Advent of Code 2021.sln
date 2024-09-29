@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 16 - Packet Decoder", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 17 - Trick Shot", "Day 17 - Trick Shot\Day 17 - Trick Shot.csproj", "{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 18 - Snailfish", "Day 18 - Snailfish\Day 18 - Snailfish.csproj", "{0023290D-D94E-4524-B700-B056B68D4CF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{447AE0C9-7C4A-4C7B-B1A5-189829B5275E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0023290D-D94E-4524-B700-B056B68D4CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0023290D-D94E-4524-B700-B056B68D4CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0023290D-D94E-4524-B700-B056B68D4CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0023290D-D94E-4524-B700-B056B68D4CF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
