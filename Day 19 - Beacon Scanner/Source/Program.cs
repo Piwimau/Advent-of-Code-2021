@@ -179,6 +179,9 @@ internal sealed partial class Program {
     /// <returns>
     /// <see langword="True"/> if an alignment was found, otherwise <see langword="false"/>.
     /// </returns>
+    /// <exception cref="ArgumentNullException">
+    /// Thrown when <paramref name="knownBeacons"/> is <see langword="null"/>.
+    /// </exception>
     private static bool TryAlignScanner(
         ImmutableArray<Vector> beacons,
         ref FrozenSet<Vector> knownBeacons,
