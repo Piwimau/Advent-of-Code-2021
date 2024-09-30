@@ -108,26 +108,27 @@ Finally, here are some (non-scientific) benchmarks I created using the fantastic
 i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spent for
 reading the input from disk and parsing it, but not the time for printing the final result.
 
-| Day                              | Min       | Max       | Mean      | Median    | Standard Deviation |
-|----------------------------------|-----------|-----------|-----------|-----------|--------------------|
-| Day 1 - Sonar Sweep              |  0.060 ms |  0.063 ms |  0.061 ms |  0.061 ms | 0.001 ms           |
-| Day 2 - Dive!                    |  0.109 ms |  0.112 ms |  0.110 ms |  0.110 ms | 0.001 ms           |
-| Day 3 - Binary Diagnostic        |  0.084 ms |  0.086 ms |  0.085 ms |  0.085 ms | 0.001 ms           |
-| Day 4 - Giant Squid              |  1.605 ms |  1.639 ms |  1.622 ms |  1.622 ms | 0.009 ms           |
-| Day 5 - Hydrothermal Venture     | 13.532 ms | 13.881 ms | 13.734 ms | 13.740 ms | 0.094 ms           |
-| Day 6 - Lanternfish              |  0.022 ms |  0.023 ms |  0.022 ms |  0.022 ms | 0.000 ms           |
-| Day 7 - The Treachery of Whales  |  3.289 ms |  3.381 ms |  3.335 ms |  3.341 ms | 0.033 ms           |
-| Day 8 - Seven Segment Search     |  0.176 ms |  0.183 ms |  0.180 ms |  0.180 ms | 0.002 ms           |
-| Day 9 - Smoke Basin              |  1.004 ms |  1.054 ms |  1.034 ms |  1.036 ms | 0.016 ms           |
-| Day 10 - Syntax Scoring          |  0.135 ms |  0.138 ms |  0.137 ms |  0.137 ms | 0.001 ms           |
-| Day 11 - Dumbo Octopus           |  1.127 ms |  1.159 ms |  1.143 ms |  1.141 ms | 0.008 ms           |
-| Day 12 - Passage Pathing         | 38.544 ms | 39.815 ms | 39.132 ms | 39.048 ms | 0.372 ms           |
-| Day 13 - Transparent Origami     |  0.146 ms |  0.149 ms |  0.148 ms |  0.148 ms | 0.001 ms           |
-| Day 14 - Extended Polymerization |  0.186 ms |  0.192 ms |  0.189 ms |  0.190 ms | 0.002 ms           |
-| Day 15 - Chiton                  | 34.518 ms | 36.790 ms | 35.401 ms | 35.389 ms | 0.642 ms           |
-| Day 16 - Packet Decoder          |  0.040 ms |  0.041 ms |  0.040 ms |  0.040 ms | 0.000 ms           |
-| Day 17 - Trick Shot              |  0.617 ms |  0.628 ms |  0.623 ms |  0.623 ms | 0.003 ms           |
-| Day 18 - Snailfish               | 16.811 ms | 17.561 ms | 17.168 ms | 17.091 ms | 0.212 ms           |
+| Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
+|----------------------------------|------------|------------|------------|------------|--------------------|
+| Day 1 - Sonar Sweep              |   0.060 ms |   0.063 ms |   0.061 ms |   0.061 ms | 0.001 ms           |
+| Day 2 - Dive!                    |   0.109 ms |   0.112 ms |   0.110 ms |   0.110 ms | 0.001 ms           |
+| Day 3 - Binary Diagnostic        |   0.084 ms |   0.086 ms |   0.085 ms |   0.085 ms | 0.001 ms           |
+| Day 4 - Giant Squid              |   1.605 ms |   1.639 ms |   1.622 ms |   1.622 ms | 0.009 ms           |
+| Day 5 - Hydrothermal Venture     |  13.532 ms |  13.881 ms |  13.734 ms |  13.740 ms | 0.094 ms           |
+| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.022 ms |   0.022 ms | 0.000 ms           |
+| Day 7 - The Treachery of Whales  |   3.289 ms |   3.381 ms |   3.335 ms |   3.341 ms | 0.033 ms           |
+| Day 8 - Seven Segment Search     |   0.176 ms |   0.183 ms |   0.180 ms |   0.180 ms | 0.002 ms           |
+| Day 9 - Smoke Basin              |   1.004 ms |   1.054 ms |   1.034 ms |   1.036 ms | 0.016 ms           |
+| Day 10 - Syntax Scoring          |   0.135 ms |   0.138 ms |   0.137 ms |   0.137 ms | 0.001 ms           |
+| Day 11 - Dumbo Octopus           |   1.127 ms |   1.159 ms |   1.143 ms |   1.141 ms | 0.008 ms           |
+| Day 12 - Passage Pathing         |  38.544 ms |  39.815 ms |  39.132 ms |  39.048 ms | 0.372 ms           |
+| Day 13 - Transparent Origami     |   0.146 ms |   0.149 ms |   0.148 ms |   0.148 ms | 0.001 ms           |
+| Day 14 - Extended Polymerization |   0.186 ms |   0.192 ms |   0.189 ms |   0.190 ms | 0.002 ms           |
+| Day 15 - Chiton                  |  34.518 ms |  36.790 ms |  35.401 ms |  35.389 ms | 0.642 ms           |
+| Day 16 - Packet Decoder          |   0.040 ms |   0.041 ms |   0.040 ms |   0.040 ms | 0.000 ms           |
+| Day 17 - Trick Shot              |   0.617 ms |   0.628 ms |   0.623 ms |   0.623 ms | 0.003 ms           |
+| Day 18 - Snailfish               |  16.811 ms |  17.561 ms |  17.168 ms |  17.091 ms | 0.212 ms           |
+| Day 19 - Beacon Scanner          | 231.308 ms | 241.200 ms | 235.252 ms | 234.144 ms | 3.009 ms           |
 
 ## License
 
