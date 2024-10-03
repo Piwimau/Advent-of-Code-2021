@@ -36,15 +36,17 @@ internal sealed class Program {
         private const int RequiredEnhancementIndexLength = 512;
 
         /// <summary>Array of all directions, cached for efficiency.</summary>
-        private static readonly ImmutableArray<Direction> Directions = [.. Enum.GetValues<Direction>()];
+        private static readonly ImmutableArray<Direction> Directions = [..
+            Enum.GetValues<Direction>()
+        ];
 
         /// <summary>Enhancement index to be used for enhancing this <see cref="Image"/>.</summary>
         private readonly ImmutableArray<Pixel> enhancementIndex;
 
         /// <summary>Pixels of this <see cref="Image"/>.</summary>
         /// <remarks>
-        /// Note that this is actually a two-dimensional array stored as a one-dimensional one (in row-major
-        /// order) for reasons of improved performance and cache locality.
+        /// Note that this is actually a two-dimensional array stored as a one-dimensional one (in
+        /// row-major order) for reasons of improved performance and cache locality.
         /// </remarks>
         private Pixel[] pixels;
 
@@ -55,13 +57,14 @@ internal sealed class Program {
         private int height;
 
         /// <summary>
-        /// Default <see cref="Pixel"/> chosen during the enhancement process for any pixels lying outside
-        /// the region of the original <see cref="Image"/>.
+        /// Default <see cref="Pixel"/> chosen during the enhancement process for any pixels lying
+        /// outside the region of the original <see cref="Image"/>.
         /// </summary>
         private Pixel defaultPixel;
 
         /// <summary>
-        /// Initializes a new <see cref="Image"/> with a given enhancement index and an array of pixels.
+        /// Initializes a new <see cref="Image"/> with a given enhancement index and an array of
+        /// pixels.
         /// </summary>
         /// <param name="enhancementIndex">
         /// Enhancement index for enhancing the <see cref="Image"/>, which must consist of exactly
@@ -114,17 +117,19 @@ internal sealed class Program {
         /// The string <paramref name="s"/> must consist of the following parts:
         /// <list type="bullet">
         ///     <item>
-        ///     An enhancement index line, consisting of exactly <see cref="RequiredEnhancementIndexLength"/>
-        ///     pixels ('.' or '#').
+        ///     An enhancement index line, consisting of exactly
+        ///     <see cref="RequiredEnhancementIndexLength"/> pixels ('.' or '#').
         ///     </item>
-        ///     <item>An empty line, separating the enhancement index from the image's pixels.</item>
         ///     <item>
-        ///     Zero or more lines of pixels ('.' or '#') representing the rows of the <see cref="Image"/>,
-        ///     which must all be of the same length.
+        ///     An empty line, separating the enhancement index from the image's pixels.
+        ///     </item>
+        ///     <item>
+        ///     Zero or more lines of pixels ('.' or '#') representing the rows of the
+        ///     <see cref="Image"/>, which must all be of the same length.
         ///     </item>
         /// </list>
-        /// An example for a valid string might be the following (actual newlines rendered, enhancement index
-        /// not shown in full length):
+        /// An example for a valid string might be the following (actual newlines rendered,
+        /// enhancement index not shown in full length):
         /// <example>
         /// <code>
         /// ..#.#..#####.#.#.#.###.##.....###.##.#..###.####..#####..#....#..#..##..##
@@ -163,23 +168,25 @@ internal sealed class Program {
         }
 
         /// <summary>
-        /// Returns the index of a <see cref="Pixel"/> with a given <see cref="Position"/> using a specified
-        /// width.
+        /// Returns the index of a <see cref="Pixel"/> with a given <see cref="Position"/> using a
+        /// specified width.
         /// </summary>
         /// <param name="position">Position of the <see cref="Pixel"/> to get the index of.</param>
         /// <param name="width">Width of the <see cref="Image"/>.</param>
         /// <returns>
-        /// The index of the <see cref="Pixel"/> with the given <see cref="Position"/> using the specified
-        /// width.
+        /// The index of the <see cref="Pixel"/> with the given <see cref="Position"/> using the
+        /// specified width.
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         private static int Index(Position position, int width) => (position.Y * width) + position.X;
 
         /// <summary>Enhances this <see cref="Image"/> for a specified number of steps.</summary>
-        /// <param name="steps">Positive number of steps to enhance this <see cref="Image"/> for.</param>
+        /// <param name="steps">
+        /// Positive number of steps to enhance this <see cref="Image"/> for.
+        /// </param>
         /// <returns>
-        /// The number of lit pixels after enhancing this <see cref="Image"/> for the specified number of
-        /// steps.
+        /// The number of lit pixels after enhancing this <see cref="Image"/> for the specified
+        /// number of steps.
         /// </returns>
         /// <exception cref="ArgumentOutOfRangeException">
         /// Thrown when <paramref name="steps"/> is negative.
@@ -191,10 +198,10 @@ internal sealed class Program {
                 int newWidth = width + 2;
                 int newHeight = height + 2;
                 Pixel[] updatedPixels = new Pixel[newWidth * newHeight];
-                // For the enhancement, we conceptually iterate over all positions of the updated pixels
-                // array, only indexing into the old pixels array if we are guaranteed to be within.
-                // Otherwise, we use a default pixel state for the edges of the new image, which may change
-                // every other step.
+                // For the enhancement, we conceptually iterate over all positions of the updated
+                // pixels array, only indexing into the old pixels array if we are guaranteed to be
+                // within. Otherwise, we use a default pixel state for the edges of the new image,
+                // which may change every other step.
                 for (int y = -1; y < (height + 1); y++) {
                     for (int x = -1; x < (width + 1); x++) {
                         Position position = new(x, y);
@@ -226,11 +233,13 @@ internal sealed class Program {
                             };
                             bool isWithin = (neighbor.X >= 0) && (neighbor.X < width)
                                 && (neighbor.Y >= 0) && (neighbor.Y < height);
-                            Pixel neigborPixel = isWithin ? pixels[Index(neighbor, width)] : defaultPixel;
+                            Pixel neigborPixel = isWithin
+                                ? pixels[Index(neighbor, width)]
+                                : defaultPixel;
                             index |= ((int) neigborPixel) << ((int) direction);
                         }
-                        // To actually store the updated pixel, we need to fix up the (possibly negative)
-                        // index by adding one to both the x- and y-coordinate.
+                        // To actually store the updated pixel, we need to fix up the (possibly
+                        // negative) index by adding one to both the x- and y-coordinate.
                         position = position with { X = position.X + 1, Y = position.Y + 1 };
                         updatedPixels[Index(position, newWidth)] = enhancementIndex[index];
                     }
