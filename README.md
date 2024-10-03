@@ -105,7 +105,7 @@ Alternatively, if you have Visual Studio installed on your machine, simply open 
 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
 [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
-i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 23H2. All benchmarks include the time spent for
+i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 24H2. All benchmarks include the time spent for
 reading the input from disk and parsing it, but not the time for printing the final result.
 
 | Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
@@ -129,6 +129,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 17 - Trick Shot              |   0.617 ms |   0.628 ms |   0.623 ms |   0.623 ms | 0.003 ms           |
 | Day 18 - Snailfish               |  16.811 ms |  17.561 ms |  17.168 ms |  17.091 ms | 0.212 ms           |
 | Day 19 - Beacon Scanner          | 231.308 ms | 241.200 ms | 235.252 ms | 234.144 ms | 3.009 ms           |
+| Day 20 - Trench Map              |  22.268 ms |  24.474 ms |  23.368 ms |  23.445 ms | 0.631 ms           |
 
 ## License
 
