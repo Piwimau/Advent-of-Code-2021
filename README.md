@@ -130,6 +130,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 18 - Snailfish               |  16.811 ms |  17.561 ms |  17.168 ms |  17.091 ms | 0.212 ms           |
 | Day 19 - Beacon Scanner          | 231.308 ms | 241.200 ms | 235.252 ms | 234.144 ms | 3.009 ms           |
 | Day 20 - Trench Map              |  22.268 ms |  24.474 ms |  23.368 ms |  23.445 ms | 0.631 ms           |
+| Day 21 - Dirac Dice              |   3.047 ms |   3.127 ms |   3.079 ms |   3.077 ms | 0.022 ms           |
 
 ## License
 

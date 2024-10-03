@@ -47,7 +47,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 18 - Snailfish", "Day 1
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 19 - Beacon Scanner", "Day 19 - Beacon Scanner\Day 19 - Beacon Scanner.csproj", "{41FEBF3C-78F2-48FD-B37C-40713ED5B650}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 20 - Trench Map", "Day 20 - Trench Map\Day 20 - Trench Map.csproj", "{F521D7ED-E6D3-4ADC-8721-B8F0488E6716}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 20 - Trench Map", "Day 20 - Trench Map\Day 20 - Trench Map.csproj", "{F521D7ED-E6D3-4ADC-8721-B8F0488E6716}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 21 - Dirac Dice", "Day 21 - Dirac Dice\Day 21 - Dirac Dice.csproj", "{1B545005-3809-4B2E-9A9C-1AACB5B6AF09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{F521D7ED-E6D3-4ADC-8721-B8F0488E6716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F521D7ED-E6D3-4ADC-8721-B8F0488E6716}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F521D7ED-E6D3-4ADC-8721-B8F0488E6716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B545005-3809-4B2E-9A9C-1AACB5B6AF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B545005-3809-4B2E-9A9C-1AACB5B6AF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B545005-3809-4B2E-9A9C-1AACB5B6AF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B545005-3809-4B2E-9A9C-1AACB5B6AF09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
