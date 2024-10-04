@@ -57,6 +57,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 23 - Amphipod", "Day 23
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 24 - Arithmetic Logic Unit", "Day 24 - Arithmetic Logic Unit\Day 24 - Arithmetic Logic Unit.csproj", "{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 25 - Sea Cucumber", "Day 25 - Sea Cucumber\Day 25 - Sea Cucumber.csproj", "{A1A60062-3641-4057-B00C-36EFCAFFAAF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A60062-3641-4057-B00C-36EFCAFFAAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A60062-3641-4057-B00C-36EFCAFFAAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A60062-3641-4057-B00C-36EFCAFFAAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A60062-3641-4057-B00C-36EFCAFFAAF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
