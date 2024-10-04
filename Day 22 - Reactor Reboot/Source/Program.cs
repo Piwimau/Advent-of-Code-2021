@@ -38,7 +38,7 @@ internal sealed partial class Program {
         public long Volume { get; } = (MaxX - MinX + 1) * (MaxY - MinY + 1) * (MaxZ - MinZ + 1);
 
         [GeneratedRegex(
-            "(?:on|off) x=-?\\d+\\.\\.-?\\d+,y=-?\\d+\\.\\.-?\\d+,z=-?\\d+\\.\\.-?\\d+"
+            "^(?:on|off) x=-?\\d+\\.\\.-?\\d+,y=-?\\d+\\.\\.-?\\d+,z=-?\\d+\\.\\.-?\\d+$"
         )]
         private static partial Regex CubeRegex();
 
