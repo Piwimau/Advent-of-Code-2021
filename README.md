@@ -133,6 +133,7 @@ reading the input from disk and parsing it, but not the time for printing the fi
 | Day 21 - Dirac Dice              |   3.047 ms |   3.127 ms |   3.079 ms |   3.077 ms | 0.022 ms           |
 | Day 22 - Reactor Reboot          |  29.640 ms |  36.351 ms |  32.930 ms |  32.832 ms | 1.723 ms           |
 | Day 23 - Amphipod                | 280.051 ms | 305.421 ms | 290.958 ms | 290.542 ms | 6.824 ms           |
+| Day 24 - Arithmetic Logic Unit   | 128.415 ms | 134.992 ms | 131.001 ms | 130.229 ms | 2.317 ms           |
 
 ## License
 
