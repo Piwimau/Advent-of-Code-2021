@@ -55,9 +55,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 22 - Reactor Reboot", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 23 - Amphipod", "Day 23 - Amphipod\Day 23 - Amphipod.csproj", "{07A2D741-82BB-4DCE-9373-E755B23E2FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 24 - Arithmetic Logic Unit", "Day 24 - Arithmetic Logic Unit\Day 24 - Arithmetic Logic Unit.csproj", "{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 24 - Arithmetic Logic Unit", "Day 24 - Arithmetic Logic Unit\Day 24 - Arithmetic Logic Unit.csproj", "{AE2B5323-1D29-42AF-A8AD-F1DA8DBE3E89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day 25 - Sea Cucumber", "Day 25 - Sea Cucumber\Day 25 - Sea Cucumber.csproj", "{A1A60062-3641-4057-B00C-36EFCAFFAAF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day 25 - Sea Cucumber", "Day 25 - Sea Cucumber\Day 25 - Sea Cucumber.csproj", "{A1A60062-3641-4057-B00C-36EFCAFFAAF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
