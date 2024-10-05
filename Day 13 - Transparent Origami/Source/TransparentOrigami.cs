@@ -159,9 +159,9 @@ internal sealed partial class TransparentOrigami {
         int maxX = visibleDots.Max(visibleDot => visibleDot.X);
         int maxY = visibleDots.Max(visibleDot => visibleDot.Y);
         StringBuilder builder = new();
-        builder.AppendLine($"The final eight letter activation code is:");
-        for (int x = 0; x <= maxX; x++) {
-            for (int y = 0; y <= maxY; y++) {
+        builder.AppendLine($"The final eight letter activation code is:{Environment.NewLine}");
+        for (int y = 0; y <= maxY; y++) {
+            for (int x = 0; x <= maxX; x++) {
                 builder.Append(visibleDots.Contains(new Position(x, y)) ? '#' : ' ');
             }
             builder.AppendLine();
