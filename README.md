@@ -41,10 +41,18 @@ The general structure of this project is as follows:
 ```
 Day 1 - Sonar Sweep/
     Resources/
+        .gitkeep
     Source/
-        Program.cs
+        Benchmark.cs
+        SonarSweep.cs
     Day 1 - Sonar Sweep.csproj
 Day 2 - Dive!/
+    Resources/
+        .gitkeep
+    Source/
+        Benchmark.cs
+        Dive.cs
+    Day 2 - Dive!.csproj
 ...
 Day 25 - Sea Cucumber/
 .gitignore
@@ -53,7 +61,7 @@ LICENSE
 README.md
 ```
 
-At the top level, the [solution file](Advent+of+Code+2021.sln) contains 25 standalone projects
+On the top level, the [solution file](Advent+of+Code+2021.sln) contains 25 standalone projects
 for the days of the Advent calendar, organized into separate directories. Each one provides a
 corresponding `.csproj` file that can be opened in Visual Studio. In addition, there are the usual
 `Source` and `Resources` directories, the latter of which contains the puzzle description and my
@@ -74,6 +82,7 @@ If you want to try one of my solutions, follow these steps below:
 0. Make sure you have `.NET 8` or a later version installed on your machine.
 
 1. Clone the repository (or download the source code) to a directory of your choice.
+
    ```shell
    git clone https://github.com/Piwimau/Advent-of-Code-2021 "./Advent of Code 2021"
    cd "./Advent of Code 2021"
@@ -82,23 +91,32 @@ If you want to try one of my solutions, follow these steps below:
 2. Put your input for the day in a file called `input.txt` and copy it to the appropriate resources
    directory. You can get all inputs from the [official website](https://adventofcode.com/2021) if
    you have not downloaded them already.
+
    ```shell
    cp input.txt "./Day 1 - Sonar Sweep/Resources"
    ```
 
 3. Nagivate into the appropriate day's directory.
+
    ```shell
    cd "./Day 1 - Sonar Sweep"
    ```
 
-4. Finally, build and run the code. Be sure to build in release mode (as shown below) to take
-   advantage of all optimizations and achieve the best performance.
+4. Finally, run the code in release mode to take advantage of all optimizations and achieve the best
+   performance.
+
    ```shell
-   dotnet build -c Release
-   dotnet run
+   dotnet run -c Release
    ```
 
-Alternatively, if you have Visual Studio installed on your machine, simply open the provided
+   Optionally, specify an additional flag `--benchmark` to benchmark the relevant day on your
+   machine. Note that in this mode no output for the results of the solved puzzle is produced.
+
+   ```shell
+   dotnet run -c Release --benchmark
+   ```
+
+If you have Visual Studio installed on your machine, you may also just open the provided
 [solution file](Advent+of+Code+2021.sln) and proceed from there.
 
 ## Benchmarks
@@ -106,36 +124,37 @@ Alternatively, if you have Visual Studio installed on your machine, simply open 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
 [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
 i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 24H2. All benchmarks include the time spent for
-reading the input from disk and parsing it, but not the time for printing the final result.
+reading the input from disk, as well as printing the puzzle results (although the output is written
+to `TextWriter.Null` when benchmarking, which is effectively a no-op and rather fast).
 
 | Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
 |----------------------------------|------------|------------|------------|------------|--------------------|
 | Day 1 - Sonar Sweep              |   0.060 ms |   0.063 ms |   0.061 ms |   0.061 ms |  0.001 ms          |
-| Day 2 - Dive!                    |   0.109 ms |   0.112 ms |   0.110 ms |   0.110 ms |  0.001 ms          |
-| Day 3 - Binary Diagnostic        |   0.084 ms |   0.086 ms |   0.085 ms |   0.085 ms |  0.001 ms          |
-| Day 4 - Giant Squid              |   1.605 ms |   1.639 ms |   1.622 ms |   1.622 ms |  0.009 ms          |
-| Day 5 - Hydrothermal Venture     |  13.532 ms |  13.881 ms |  13.734 ms |  13.740 ms |  0.094 ms          |
-| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.022 ms |   0.022 ms |  0.000 ms          |
-| Day 7 - The Treachery of Whales  |   3.289 ms |   3.381 ms |   3.335 ms |   3.341 ms |  0.033 ms          |
-| Day 8 - Seven Segment Search     |   0.176 ms |   0.183 ms |   0.180 ms |   0.180 ms |  0.002 ms          |
-| Day 9 - Smoke Basin              |   1.004 ms |   1.054 ms |   1.034 ms |   1.036 ms |  0.016 ms          |
-| Day 10 - Syntax Scoring          |   0.135 ms |   0.138 ms |   0.137 ms |   0.137 ms |  0.001 ms          |
-| Day 11 - Dumbo Octopus           |   1.127 ms |   1.159 ms |   1.143 ms |   1.141 ms |  0.008 ms          |
-| Day 12 - Passage Pathing         |  38.544 ms |  39.815 ms |  39.132 ms |  39.048 ms |  0.372 ms          |
-| Day 13 - Transparent Origami     |   0.146 ms |   0.149 ms |   0.148 ms |   0.148 ms |  0.001 ms          |
-| Day 14 - Extended Polymerization |   0.186 ms |   0.192 ms |   0.189 ms |   0.190 ms |  0.002 ms          |
-| Day 15 - Chiton                  |  34.518 ms |  36.790 ms |  35.401 ms |  35.389 ms |  0.642 ms          |
-| Day 16 - Packet Decoder          |   0.040 ms |   0.041 ms |   0.040 ms |   0.040 ms |  0.000 ms          |
-| Day 17 - Trick Shot              |   0.617 ms |   0.628 ms |   0.623 ms |   0.623 ms |  0.003 ms          |
-| Day 18 - Snailfish               |  16.811 ms |  17.561 ms |  17.168 ms |  17.091 ms |  0.212 ms          |
-| Day 19 - Beacon Scanner          | 231.308 ms | 241.200 ms | 235.252 ms | 234.144 ms |  3.009 ms          |
-| Day 20 - Trench Map              |  22.268 ms |  24.474 ms |  23.368 ms |  23.445 ms |  0.631 ms          |
-| Day 21 - Dirac Dice              |   3.047 ms |   3.127 ms |   3.079 ms |   3.077 ms |  0.022 ms          |
-| Day 22 - Reactor Reboot          |  29.640 ms |  36.351 ms |  32.930 ms |  32.832 ms |  1.723 ms          |
-| Day 23 - Amphipod                | 280.051 ms | 305.421 ms | 290.958 ms | 290.542 ms |  6.824 ms          |
-| Day 24 - Arithmetic Logic Unit   | 128.415 ms | 134.992 ms | 131.001 ms | 130.229 ms |  2.317 ms          |
-| Day 25 - Sea Cucumber            |  57.060 ms |  59.722 ms |  58.297 ms |  58.243 ms |  0.803 ms          |
-| Total                            | 863.794 ms | 922.812 ms | 889.049 ms | 886.516 ms | 16.727 ms          |
+| Day 2 - Dive!                    |   0.109 ms |   0.113 ms |   0.111 ms |   0.111 ms |  0.001 ms          |
+| Day 3 - Binary Diagnostic        |   0.083 ms |   0.086 ms |   0.085 ms |   0.084 ms |  0.001 ms          |
+| Day 4 - Giant Squid              |   1.601 ms |   1.682 ms |   1.653 ms |   1.658 ms |  0.022 ms          |
+| Day 5 - Hydrothermal Venture     |  12.340 ms |  12.907 ms |  12.680 ms |  12.707 ms |  0.164 ms          |
+| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.023 ms |   0.023 ms |  0.000 ms          |
+| Day 7 - The Treachery of Whales  |   3.221 ms |   3.321 ms |   3.280 ms |   3.287 ms |  0.026 ms          |
+| Day 8 - Seven Segment Search     |   0.182 ms |   0.194 ms |   0.189 ms |   0.189 ms |  0.003 ms          |
+| Day 9 - Smoke Basin              |   0.990 ms |   1.064 ms |   1.019 ms |   1.014 ms |  0.019 ms          |
+| Day 10 - Syntax Scoring          |   0.134 ms |   0.139 ms |   0.136 ms |   0.135 ms |  0.001 ms          |
+| Day 11 - Dumbo Octopus           |   1.097 ms |   1.123 ms |   1.110 ms |   1.108 ms |  0.007 ms          |
+| Day 12 - Passage Pathing         |  39.537 ms |  40.785 ms |  40.243 ms |  40.309 ms |  0.406 ms          |
+| Day 13 - Transparent Origami     |   0.148 ms |   0.152 ms |   0.150 ms |   0.151 ms |  0.001 ms          |
+| Day 14 - Extended Polymerization |   0.188 ms |   0.199 ms |   0.192 ms |   0.192 ms |  0.003 ms          |
+| Day 15 - Chiton                  |  33.354 ms |  35.100 ms |  34.392 ms |  34.419 ms |  0.551 ms          |
+| Day 16 - Packet Decoder          |   0.040 ms |   0.042 ms |   0.041 ms |   0.041 ms |  0.000 ms          |
+| Day 17 - Trick Shot              |   0.584 ms |   0.606 ms |   0.595 ms |   0.595 ms |  0.006 ms          |
+| Day 18 - Snailfish               |  18.189 ms |  18.735 ms |  18.540 ms |  18.539 ms |  0.167 ms          |
+| Day 19 - Beacon Scanner          | 244.310 ms | 255.338 ms | 250.808 ms | 251.105 ms |  3.147 ms          |
+| Day 20 - Trench Map              |  22.665 ms |  23.194 ms |  22.926 ms |  22.922 ms |  0.157 ms          |
+| Day 21 - Dirac Dice              |   2.971 ms |   3.059 ms |   3.028 ms |   3.032 ms |  0.027 ms          |
+| Day 22 - Reactor Reboot          |  28.976 ms |  33.655 ms |  30.885 ms |  30.593 ms |  1.203 ms          |
+| Day 23 - Amphipod                | 284.823 ms | 302.756 ms | 295.350 ms | 296.108 ms |  5.225 ms          |
+| Day 24 - Arithmetic Logic Unit   | 127.090 ms | 132.216 ms | 129.253 ms | 128.711 ms |  1.598 ms          |
+| Day 25 - Sea Cucumber            |  56.955 ms |  60.222 ms |  58.291 ms |  58.280 ms |  0.848 ms          |
+| Total                            | 879.669 ms | 926.774 ms | 905.041 ms | 905.374 ms | 13.584 ms          |
 
 ## License
 
