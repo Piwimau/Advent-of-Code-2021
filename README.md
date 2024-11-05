@@ -62,7 +62,7 @@ LICENSE
 README.md
 ```
 
-On the top level, the [solution file](Advent+of+Code+2021.sln) contains 25 standalone projects
+On the top level, the [solution file](<Advent of Code 2021.sln>) contains 25 standalone projects
 for the days of the Advent calendar, organized into separate directories. Each one provides a
 corresponding `.csproj` file that can be opened in Visual Studio. In addition, there are the usual
 `Source` and `Resources` directories, the latter of which contains the puzzle description and my
@@ -118,7 +118,7 @@ If you want to try one of my solutions, follow these steps below:
    ```
 
 If you have Visual Studio installed on your machine, you may also just open the provided
-[solution file](Advent+of+Code+2021.sln) and proceed from there.
+[solution file](<Advent of Code 2021.sln>) and proceed from there.
 
 ## Benchmarks
 
@@ -130,32 +130,32 @@ to `TextWriter.Null` when benchmarking, which is effectively a no-op and rather 
 
 | Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
 |----------------------------------|------------|------------|------------|------------|--------------------|
-| Day 1 - Sonar Sweep              |   0.060 ms |   0.063 ms |   0.061 ms |   0.061 ms |  0.001 ms          |
-| Day 2 - Dive!                    |   0.109 ms |   0.113 ms |   0.111 ms |   0.111 ms |  0.001 ms          |
-| Day 3 - Binary Diagnostic        |   0.083 ms |   0.086 ms |   0.085 ms |   0.084 ms |  0.001 ms          |
-| Day 4 - Giant Squid              |   1.601 ms |   1.682 ms |   1.653 ms |   1.658 ms |  0.022 ms          |
-| Day 5 - Hydrothermal Venture     |  12.340 ms |  12.907 ms |  12.680 ms |  12.707 ms |  0.164 ms          |
-| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.023 ms |   0.023 ms |  0.000 ms          |
-| Day 7 - The Treachery of Whales  |   3.221 ms |   3.321 ms |   3.280 ms |   3.287 ms |  0.026 ms          |
-| Day 8 - Seven Segment Search     |   0.182 ms |   0.194 ms |   0.189 ms |   0.189 ms |  0.003 ms          |
-| Day 9 - Smoke Basin              |   0.990 ms |   1.064 ms |   1.019 ms |   1.014 ms |  0.019 ms          |
-| Day 10 - Syntax Scoring          |   0.134 ms |   0.139 ms |   0.136 ms |   0.135 ms |  0.001 ms          |
-| Day 11 - Dumbo Octopus           |   1.097 ms |   1.123 ms |   1.110 ms |   1.108 ms |  0.007 ms          |
-| Day 12 - Passage Pathing         |  39.537 ms |  40.785 ms |  40.243 ms |  40.309 ms |  0.406 ms          |
-| Day 13 - Transparent Origami     |   0.148 ms |   0.152 ms |   0.150 ms |   0.151 ms |  0.001 ms          |
-| Day 14 - Extended Polymerization |   0.188 ms |   0.199 ms |   0.192 ms |   0.192 ms |  0.003 ms          |
-| Day 15 - Chiton                  |  33.354 ms |  35.100 ms |  34.392 ms |  34.419 ms |  0.551 ms          |
-| Day 16 - Packet Decoder          |   0.040 ms |   0.042 ms |   0.041 ms |   0.041 ms |  0.000 ms          |
-| Day 17 - Trick Shot              |   0.584 ms |   0.606 ms |   0.595 ms |   0.595 ms |  0.006 ms          |
-| Day 18 - Snailfish               |  18.189 ms |  18.735 ms |  18.540 ms |  18.539 ms |  0.167 ms          |
-| Day 19 - Beacon Scanner          | 244.310 ms | 255.338 ms | 250.808 ms | 251.105 ms |  3.147 ms          |
-| Day 20 - Trench Map              |  22.665 ms |  23.194 ms |  22.926 ms |  22.922 ms |  0.157 ms          |
-| Day 21 - Dirac Dice              |   2.971 ms |   3.059 ms |   3.028 ms |   3.032 ms |  0.027 ms          |
-| Day 22 - Reactor Reboot          |  28.976 ms |  33.655 ms |  30.885 ms |  30.593 ms |  1.203 ms          |
-| Day 23 - Amphipod                | 284.823 ms | 302.756 ms | 295.350 ms | 296.108 ms |  5.225 ms          |
-| Day 24 - Arithmetic Logic Unit   | 127.090 ms | 132.216 ms | 129.253 ms | 128.711 ms |  1.598 ms          |
-| Day 25 - Sea Cucumber            |  56.955 ms |  60.222 ms |  58.291 ms |  58.280 ms |  0.848 ms          |
-| Total                            | 879.669 ms | 926.774 ms | 905.041 ms | 905.374 ms | 13.584 ms          |
+| Day 1 - Sonar Sweep              |   0.060 ms |   0.063 ms |   0.061 ms |   0.061 ms |           0.001 ms |
+| Day 2 - Dive!                    |   0.109 ms |   0.113 ms |   0.111 ms |   0.111 ms |           0.001 ms |
+| Day 3 - Binary Diagnostic        |   0.083 ms |   0.086 ms |   0.085 ms |   0.084 ms |           0.001 ms |
+| Day 4 - Giant Squid              |   1.601 ms |   1.682 ms |   1.653 ms |   1.658 ms |           0.022 ms |
+| Day 5 - Hydrothermal Venture     |  12.340 ms |  12.907 ms |  12.680 ms |  12.707 ms |           0.164 ms |
+| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.023 ms |   0.023 ms |           0.000 ms |
+| Day 7 - The Treachery of Whales  |   3.221 ms |   3.321 ms |   3.280 ms |   3.287 ms |           0.026 ms |
+| Day 8 - Seven Segment Search     |   0.182 ms |   0.194 ms |   0.189 ms |   0.189 ms |           0.003 ms |
+| Day 9 - Smoke Basin              |   0.990 ms |   1.064 ms |   1.019 ms |   1.014 ms |           0.019 ms |
+| Day 10 - Syntax Scoring          |   0.134 ms |   0.139 ms |   0.136 ms |   0.135 ms |           0.001 ms |
+| Day 11 - Dumbo Octopus           |   1.097 ms |   1.123 ms |   1.110 ms |   1.108 ms |           0.007 ms |
+| Day 12 - Passage Pathing         |  39.537 ms |  40.785 ms |  40.243 ms |  40.309 ms |           0.406 ms |
+| Day 13 - Transparent Origami     |   0.148 ms |   0.152 ms |   0.150 ms |   0.151 ms |           0.001 ms |
+| Day 14 - Extended Polymerization |   0.188 ms |   0.199 ms |   0.192 ms |   0.192 ms |           0.003 ms |
+| Day 15 - Chiton                  |  33.354 ms |  35.100 ms |  34.392 ms |  34.419 ms |           0.551 ms |
+| Day 16 - Packet Decoder          |   0.040 ms |   0.042 ms |   0.041 ms |   0.041 ms |           0.000 ms |
+| Day 17 - Trick Shot              |   0.584 ms |   0.606 ms |   0.595 ms |   0.595 ms |           0.006 ms |
+| Day 18 - Snailfish               |  18.189 ms |  18.735 ms |  18.540 ms |  18.539 ms |           0.167 ms |
+| Day 19 - Beacon Scanner          | 244.310 ms | 255.338 ms | 250.808 ms | 251.105 ms |           3.147 ms |
+| Day 20 - Trench Map              |  22.665 ms |  23.194 ms |  22.926 ms |  22.922 ms |           0.157 ms |
+| Day 21 - Dirac Dice              |   2.971 ms |   3.059 ms |   3.028 ms |   3.032 ms |           0.027 ms |
+| Day 22 - Reactor Reboot          |  28.976 ms |  33.655 ms |  30.885 ms |  30.593 ms |           1.203 ms |
+| Day 23 - Amphipod                | 284.823 ms | 302.756 ms | 295.350 ms | 296.108 ms |           5.225 ms |
+| Day 24 - Arithmetic Logic Unit   | 127.090 ms | 132.216 ms | 129.253 ms | 128.711 ms |           1.598 ms |
+| Day 25 - Sea Cucumber            |  56.955 ms |  60.222 ms |  58.291 ms |  58.280 ms |           0.848 ms |
+| Total                            | 879.669 ms | 926.774 ms | 905.041 ms | 905.374 ms |          13.584 ms |
 
 ## License
 
