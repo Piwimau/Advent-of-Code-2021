@@ -38,7 +38,7 @@ solutions and sometimes little sketches to better illustrate the way a piece of 
 
 The general structure of this project is as follows:
 
-```
+```plaintext
 Day 1 - Sonar Sweep/
     Resources/
         .gitkeep
