@@ -9,22 +9,21 @@ the first year I ever participated.
 [Eric Wastl](http://was.tl/). Every day from December 1st to 25th, a puzzle is released alongside an
 engaging fictional Christmas story. Each puzzle consists of two parts, the second of which usually
 contains some interesting twist or changing requirements and is only unlocked after completing the
-first one. The objective is to solve all parts and collect fifty stars ⭐ until December 25th to
-save Christmas.
+first one. The objective is to solve all parts and collect fifty stars ⭐ until December 25th to save
+Christmas.
 
-Many users compete on the [global leaderboard](https://adventofcode.com/2021/leaderboard) by
-solving the puzzles in an unbelievably fast way in order to get some extra points. Personally,
-I see Advent of Code as a fun exercise to do during the Advent season while waiting for Christmas.
-I often use it to learn a new programming language (like I did in 2021 with `C#`) or some advanced
-programming concepts. I can only encourage you to participate as well - of course in a way that you
-find fun. Just get started and learn more about Advent of Code
-[here](https://adventofcode.com/2021/about).
+Many users compete on the [global leaderboard](https://adventofcode.com/2021/leaderboard) by solving
+the puzzles in an unbelievably fast way in order to get some extra points. Personally, I see Advent
+of Code as a fun exercise to do during the Advent season while waiting for Christmas. I often use it
+to learn a new programming language (like I did in 2021 with `C#`) or some advanced programming
+concepts. I can only encourage you to participate as well - of course in a way that you find fun.
+Just get started and learn more about Advent of Code [here](https://adventofcode.com/2021/about).
 
 ## About this project
 
 The solutions for Advent of Code 2021 were originally developed using `.NET 6` and `C# 10` at the
-time. Since then I have taken some time to update them to more recent versions (`.NET 8` and
-`C# 12`), which allowed me to take advantage of new language features and modern data structures
+time. Since then I have taken some time to update them to more recent versions (`.NET 9` and
+`C# 13`), which allowed me to take advantage of new language features and modern data structures
 that either did not exist yet or I did not know about (as I was just starting to learn the whole
 ecosystem). These include expression bodies (`=>`), collection expressions (`[...]`), target-typed
 `new()`, `Span<T>` and `ReadOnlySpan<T>`, types of the `System.Collections.Immutable` or
@@ -78,9 +77,9 @@ in the following section.
 
 ## Dependencies and usage
 
-If you want to try one of my solutions, follow these steps below:
+If you want to try out one of my solutions, simply follow these steps below:
 
-0. Make sure you have `.NET 8` or a later version installed on your machine.
+0. Make sure you have `.NET 9` or a later version installed on your machine.
 
 1. Clone the repository (or download the source code) to a directory of your choice.
 
@@ -130,32 +129,32 @@ to `TextWriter.Null` when benchmarking, which is effectively a no-op and rather 
 
 | Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
 |----------------------------------|------------|------------|------------|------------|--------------------|
-| Day 1 - Sonar Sweep              |   0.060 ms |   0.063 ms |   0.061 ms |   0.061 ms |           0.001 ms |
-| Day 2 - Dive!                    |   0.109 ms |   0.113 ms |   0.111 ms |   0.111 ms |           0.001 ms |
-| Day 3 - Binary Diagnostic        |   0.083 ms |   0.086 ms |   0.085 ms |   0.084 ms |           0.001 ms |
-| Day 4 - Giant Squid              |   1.601 ms |   1.682 ms |   1.653 ms |   1.658 ms |           0.022 ms |
-| Day 5 - Hydrothermal Venture     |  12.340 ms |  12.907 ms |  12.680 ms |  12.707 ms |           0.164 ms |
-| Day 6 - Lanternfish              |   0.022 ms |   0.023 ms |   0.023 ms |   0.023 ms |           0.000 ms |
-| Day 7 - The Treachery of Whales  |   3.221 ms |   3.321 ms |   3.280 ms |   3.287 ms |           0.026 ms |
-| Day 8 - Seven Segment Search     |   0.182 ms |   0.194 ms |   0.189 ms |   0.189 ms |           0.003 ms |
-| Day 9 - Smoke Basin              |   0.990 ms |   1.064 ms |   1.019 ms |   1.014 ms |           0.019 ms |
-| Day 10 - Syntax Scoring          |   0.134 ms |   0.139 ms |   0.136 ms |   0.135 ms |           0.001 ms |
-| Day 11 - Dumbo Octopus           |   1.097 ms |   1.123 ms |   1.110 ms |   1.108 ms |           0.007 ms |
-| Day 12 - Passage Pathing         |  39.537 ms |  40.785 ms |  40.243 ms |  40.309 ms |           0.406 ms |
-| Day 13 - Transparent Origami     |   0.148 ms |   0.152 ms |   0.150 ms |   0.151 ms |           0.001 ms |
-| Day 14 - Extended Polymerization |   0.188 ms |   0.199 ms |   0.192 ms |   0.192 ms |           0.003 ms |
-| Day 15 - Chiton                  |  33.354 ms |  35.100 ms |  34.392 ms |  34.419 ms |           0.551 ms |
-| Day 16 - Packet Decoder          |   0.040 ms |   0.042 ms |   0.041 ms |   0.041 ms |           0.000 ms |
-| Day 17 - Trick Shot              |   0.584 ms |   0.606 ms |   0.595 ms |   0.595 ms |           0.006 ms |
-| Day 18 - Snailfish               |  18.189 ms |  18.735 ms |  18.540 ms |  18.539 ms |           0.167 ms |
-| Day 19 - Beacon Scanner          | 244.310 ms | 255.338 ms | 250.808 ms | 251.105 ms |           3.147 ms |
-| Day 20 - Trench Map              |  22.665 ms |  23.194 ms |  22.926 ms |  22.922 ms |           0.157 ms |
-| Day 21 - Dirac Dice              |   2.971 ms |   3.059 ms |   3.028 ms |   3.032 ms |           0.027 ms |
-| Day 22 - Reactor Reboot          |  28.976 ms |  33.655 ms |  30.885 ms |  30.593 ms |           1.203 ms |
-| Day 23 - Amphipod                | 284.823 ms | 302.756 ms | 295.350 ms | 296.108 ms |           5.225 ms |
-| Day 24 - Arithmetic Logic Unit   | 127.090 ms | 132.216 ms | 129.253 ms | 128.711 ms |           1.598 ms |
-| Day 25 - Sea Cucumber            |  56.955 ms |  60.222 ms |  58.291 ms |  58.280 ms |           0.848 ms |
-| Total                            | 879.669 ms | 926.774 ms | 905.041 ms | 905.374 ms |          13.584 ms |
+| Day 1 - Sonar Sweep              |   0.054 ms |   0.057 ms |   0.055 ms |   0.055 ms |           0.001 ms |
+| Day 2 - Dive!                    |   0.101 ms |   0.105 ms |   0.103 ms |   0.102 ms |           0.001 ms |
+| Day 3 - Binary Diagnostic        |   0.076 ms |   0.077 ms |   0.076 ms |   0.076 ms |           0.000 ms |
+| Day 4 - Giant Squid              |   1.459 ms |   1.516 ms |   1.490 ms |   1.492 ms |           0.016 ms |
+| Day 5 - Hydrothermal Venture     |  10.650 ms |  11.047 ms |  10.867 ms |  10.905 ms |           0.112 ms |
+| Day 6 - Lanternfish              |   0.019 ms |   0.020 ms |   0.020 ms |   0.020 ms |           0.000 ms |
+| Day 7 - The Treachery of Whales  |   3.567 ms |   3.673 ms |   3.624 ms |   3.639 ms |           0.037 ms |
+| Day 8 - Seven Segment Search     |   0.175 ms |   0.182 ms |   0.177 ms |   0.177 ms |           0.002 ms |
+| Day 9 - Smoke Basin              |   0.994 ms |   1.036 ms |   1.008 ms |   1.004 ms |           0.013 ms |
+| Day 10 - Syntax Scoring          |   0.131 ms |   0.135 ms |   0.133 ms |   0.133 ms |           0.001 ms |
+| Day 11 - Dumbo Octopus           |   1.027 ms |   1.059 ms |   1.039 ms |   1.039 ms |           0.009 ms |
+| Day 12 - Passage Pathing         |  32.794 ms |  34.190 ms |  33.348 ms |  33.262 ms |           0.402 ms |
+| Day 13 - Transparent Origami     |   0.132 ms |   0.137 ms |   0.135 ms |   0.135 ms |           0.002 ms |
+| Day 14 - Extended Polymerization |   0.208 ms |   0.222 ms |   0.213 ms |   0.212 ms |           0.004 ms |
+| Day 15 - Chiton                  |  31.869 ms |  32.248 ms |  32.028 ms |  32.014 ms |           0.108 ms |
+| Day 16 - Packet Decoder          |   0.036 ms |   0.039 ms |   0.038 ms |   0.037 ms |           0.001 ms |
+| Day 17 - Trick Shot              |   0.467 ms |   0.475 ms |   0.470 ms |   0.470 ms |           0.002 ms |
+| Day 18 - Snailfish               |  15.981 ms |  16.463 ms |  16.186 ms |  16.187 ms |           0.137 ms |
+| Day 19 - Beacon Scanner          | 234.062 ms | 241.932 ms | 237.632 ms | 237.508 ms |           2.211 ms |
+| Day 20 - Trench Map              |  22.148 ms |  22.750 ms |  22.511 ms |  22.535 ms |           0.152 ms |
+| Day 21 - Dirac Dice              |   2.759 ms |   2.919 ms |   2.836 ms |   2.840 ms |           0.050 ms |
+| Day 22 - Reactor Reboot          |  34.651 ms |  36.186 ms |  35.877 ms |  36.039 ms |           0.401 ms |
+| Day 23 - Amphipod                | 270.380 ms | 297.666 ms | 280.041 ms | 280.234 ms |           7.234 ms |
+| Day 24 - Arithmetic Logic Unit   | 115.883 ms | 121.170 ms | 118.048 ms | 118.097 ms |           1.429 ms |
+| Day 25 - Sea Cucumber            |  53.427 ms |  54.866 ms |  54.009 ms |  53.951 ms |           0.395 ms |
+| Total                            | 833.050 ms | 880.170 ms | 851.964 ms | 852.163 ms |          12.720 ms |
 
 ## License
 
