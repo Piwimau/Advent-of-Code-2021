@@ -9,8 +9,8 @@ the first year I ever participated.
 [Eric Wastl](http://was.tl/). Every day from December 1st to 25th, a puzzle is released alongside an
 engaging fictional Christmas story. Each puzzle consists of two parts, the second of which usually
 contains some interesting twist or changing requirements and is only unlocked after completing the
-first one. The objective is to solve all parts and collect fifty stars ⭐ until December 25th to save
-Christmas.
+first one. The objective is to solve all parts and collect fifty stars ⭐ until December 25th to
+save Christmas.
 
 Many users compete on the [global leaderboard](https://adventofcode.com/2021/leaderboard) by solving
 the puzzles in an unbelievably fast way in order to get some extra points. Personally, I see Advent
@@ -19,7 +19,7 @@ to learn a new programming language (like I did in 2021 with `C#`) or some advan
 concepts. I can only encourage you to participate as well - of course in a way that you find fun.
 Just get started and learn more about Advent of Code [here](https://adventofcode.com/2021/about).
 
-## About this project
+## About This Project
 
 The solutions for Advent of Code 2021 were originally developed using `.NET 6` and `C# 10` at the
 time. Since then I have taken some time to update them to more recent versions (`.NET 9` and
@@ -75,7 +75,7 @@ therefore not publicly available.
 As a consequence, you will have to provide your own inputs for the days, as described in more detail
 in the following section.
 
-## Dependencies and usage
+## Dependencies And Usage
 
 If you want to try out one of my solutions, simply follow these steps below:
 
