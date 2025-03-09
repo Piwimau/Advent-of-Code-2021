@@ -19,7 +19,7 @@ to learn a new programming language (like I did in 2021 with `C#`) or some advan
 concepts. I can only encourage you to participate as well - of course in a way that you find fun.
 Just get started and learn more about Advent of Code [here](https://adventofcode.com/2021/about).
 
-## About This Project
+## About this project
 
 The solutions for Advent of Code 2021 were originally developed using `.NET 6` and `C# 10` at the
 time. Since then I have taken some time to update them to more recent versions (`.NET 9` and
@@ -75,7 +75,7 @@ therefore not publicly available.
 As a consequence, you will have to provide your own inputs for the days, as described in more detail
 in the following section.
 
-## Dependencies And Usage
+## Dependencies and usage
 
 If you want to try out one of my solutions, simply follow these steps below:
 
@@ -127,8 +127,8 @@ i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 24H2. All benchmarks include 
 reading the input from disk, as well as printing the puzzle results (although the output is written
 to `TextWriter.Null` when benchmarking, which is effectively a no-op and rather fast).
 
-| Day                              | Min        | Max        | Mean       | Median     | Standard Deviation |
-|----------------------------------|------------|------------|------------|------------|--------------------|
+| Day                              |        Min |        Max |       Mean |     Median | Standard Deviation |
+|----------------------------------|-----------:|-----------:|-----------:|-----------:|-------------------:|
 | Day 1 - Sonar Sweep              |   0.054 ms |   0.057 ms |   0.055 ms |   0.055 ms |           0.001 ms |
 | Day 2 - Dive!                    |   0.101 ms |   0.105 ms |   0.103 ms |   0.102 ms |           0.001 ms |
 | Day 3 - Binary Diagnostic        |   0.076 ms |   0.077 ms |   0.076 ms |   0.076 ms |           0.000 ms |
