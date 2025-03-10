@@ -38,30 +38,30 @@ solutions and sometimes little sketches to better illustrate the way a piece of 
 The general structure of this project is as follows:
 
 ```plaintext
-Day 1 - Sonar Sweep/
-    Resources/
-        .gitkeep
-    Source/
-        Benchmark.cs
-        SonarSweep.cs
-    Day 1 - Sonar Sweep.csproj
-Day 2 - Dive!/
-    Resources/
-        .gitkeep
-    Source/
-        Benchmark.cs
-        Dive.cs
-    Day 2 - Dive!.csproj
+Day-01-Sonar-Sweep/
+  Resources/
+    .gitkeep
+  Source/
+    Benchmark.cs
+    SonarSweep.cs
+  Day-01-Sonar-Sweep.csproj
+Day-02-Dive!/
+  Resources/
+    .gitkeep
+  Source/
+    Benchmark.cs
+    Dive.cs
+  Day-02-Dive!.csproj
 ...
-Day 25 - Sea Cucumber/
+Day-25-Sea-Cucumber/
     ...
 .gitignore
-Advent of Code 2021.sln
+Advent-of-Code-2021.sln
 LICENSE
 README.md
 ```
 
-On the top level, the [solution file](<Advent of Code 2021.sln>) contains 25 standalone projects
+On the top level, the [solution file](Advent-of-Code-2021.sln) contains 25 standalone projects
 for the days of the Advent calendar, organized into separate directories. Each one provides a
 corresponding `.csproj` file that can be opened in Visual Studio. In addition, there are the usual
 `Source` and `Resources` directories, the latter of which contains the puzzle description and my
@@ -84,8 +84,8 @@ If you want to try out one of my solutions, simply follow these steps below:
 1. Clone the repository (or download the source code) to a directory of your choice.
 
    ```shell
-   git clone https://github.com/Piwimau/Advent-of-Code-2021 "./Advent of Code 2021"
-   cd "./Advent of Code 2021"
+   git clone https://github.com/Piwimau/Advent-of-Code-2021 ./Advent-of-Code-2021
+   cd ./Advent-of-Code-2021
    ```
 
 2. Put your input for the day in a file called `input.txt` and copy it to the appropriate resources
@@ -93,13 +93,13 @@ If you want to try out one of my solutions, simply follow these steps below:
    you have not downloaded them already.
 
    ```shell
-   cp input.txt "./Day 1 - Sonar Sweep/Resources"
+   cp input.txt ./Day-01-Sonar-Sweep/Resources
    ```
 
 3. Nagivate into the appropriate day's directory.
 
    ```shell
-   cd "./Day 1 - Sonar Sweep"
+   cd ./Day-01-Sonar-Sweep
    ```
 
 4. Finally, run the code in release mode to take advantage of all optimizations and achieve the best
@@ -117,7 +117,7 @@ If you want to try out one of my solutions, simply follow these steps below:
    ```
 
 If you have Visual Studio installed on your machine, you may also just open the provided
-[solution file](<Advent of Code 2021.sln>) and proceed from there.
+[solution file](Advent-of-Code-2021.sln) and proceed from there.
 
 ## Benchmarks
 
