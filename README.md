@@ -38,36 +38,34 @@ solutions and sometimes little sketches to better illustrate the way a piece of 
 The general structure of this project is as follows:
 
 ```plaintext
-Day-01-Sonar-Sweep/
-  Resources/
-    .gitkeep
-  Source/
+src/
+  Day-01-Sonar-Sweep/
+    Resources/
+      .gitkeep
     Benchmark.cs
+    Day-01-Sonar-Sweep.csproj
     SonarSweep.cs
-  Day-01-Sonar-Sweep.csproj
-Day-02-Dive!/
-  Resources/
-    .gitkeep
-  Source/
+  Day-02-Dive!/
+    Resources/
+      .gitkeep
     Benchmark.cs
+    Day-02-Dive!.csproj
     Dive.cs
-  Day-02-Dive!.csproj
-...
-Day-25-Sea-Cucumber/
   ...
+  Day-25-Sea-Cucumber/
+    ...
 .gitignore
-Advent-of-Code-2021.sln
+Advent-of-Code-2021.slnx
 LICENSE
 README.md
 ```
 
-On the top level, the [solution file](Advent-of-Code-2021.sln) contains 25 standalone projects
-for the days of the Advent calendar, organized into separate directories. Each one provides a
-corresponding `.csproj` file that can be opened in Visual Studio. In addition, there are the usual
-`Source` and `Resources` directories, the latter of which contains the puzzle description and my
-personal input for that day. However, [as requested](https://adventofcode.com/2021/about) by the
-creator of Advent of Code, these are only present in my own private copy of the repository and
-therefore not publicly available.
+The [solution file](Advent-of-Code-2021.slnx) contains 25 standalone projects for the days of the
+Advent calendar, organized into separate directories. Each one provides a corresponding `.csproj`
+file that can be opened in Visual Studio. In addition, there is a `Resources` directory which
+contains the puzzle description and my personal input for that day. However,
+[as requested](https://adventofcode.com/2021/about) by the creator of Advent of Code, these are only
+present in my own private copy of the repository and therefore not publicly available.
 
 > If you're posting a code repository somewhere, please don't include parts of Advent of Code like
   the puzzle text or your inputs.
@@ -93,31 +91,31 @@ If you want to try out one of my solutions, simply follow these steps below:
    you have not downloaded them already.
 
    ```shell
-   cp input.txt ./Day-01-Sonar-Sweep/Resources
+   cp input.txt ./src/Day-01-Sonar-Sweep/Resources
    ```
 
 3. Nagivate into the appropriate day's directory.
 
    ```shell
-   cd ./Day-01-Sonar-Sweep
+   cd ./src/Day-01-Sonar-Sweep
    ```
 
 4. Finally, run the code in release mode to take advantage of all optimizations and achieve the best
    performance.
 
    ```shell
-   dotnet run -c Release
+   dotnet run --configuration Release
    ```
 
    Optionally, specify an additional flag `--benchmark` to benchmark the relevant day on your
    machine. Note that in this mode no output for the results of the solved puzzle is produced.
 
    ```shell
-   dotnet run -c Release --benchmark
+   dotnet run --configuration Release --benchmark
    ```
 
 If you have Visual Studio installed on your machine, you may also just open the provided
-[solution file](Advent-of-Code-2021.sln) and proceed from there.
+[solution file](Advent-of-Code-2021.slnx) and proceed from there.
 
 ## Benchmarks
 
