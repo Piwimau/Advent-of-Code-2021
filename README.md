@@ -1,9 +1,9 @@
 # 🎄 Advent of Code 2021 🎄
 
-This repository contains my solutions for [Advent of Code 2021](https://adventofcode.com/2021),
-the first year I ever participated.
+This repository contains my solutions for [Advent of Code 2021](https://adventofcode.com/2021), the
+first year I ever participated.
 
-## What is Advent of Code?
+## What Is Advent of Code?
 
 [Advent of Code](https://adventofcode.com/) is a series of small programming puzzles created by
 [Eric Wastl](http://was.tl/). Every day from December 1st to 25th, a puzzle is released alongside an
@@ -19,7 +19,7 @@ to learn a new programming language (like I did in 2021 with `C#`) or some advan
 concepts. I can only encourage you to participate as well - of course in a way that you find fun.
 Just get started and learn more about Advent of Code [here](https://adventofcode.com/2021/about).
 
-## About this project
+## About This Project
 
 The solutions for Advent of Code 2021 were originally developed using `.NET 6` and `C# 10` at the
 time. Since then I have taken some time to update them to more recent versions (`.NET 9` and
@@ -73,20 +73,20 @@ present in my own private copy of the repository and therefore not publicly avai
 As a consequence, you will have to provide your own inputs for the days, as described in more detail
 in the following section.
 
-## Dependencies and usage
+## Dependencies and Usage
 
 If you want to try out one of my solutions, simply follow these steps below:
 
-0. Make sure you have `.NET 9` or a later version installed on your machine.
+1. Make sure you have `.NET 9` or a later version installed on your machine.
 
-1. Clone the repository (or download the source code) to a directory of your choice.
+2. Clone the repository (or download the source code) to a directory of your choice.
 
    ```shell
    git clone https://github.com/Piwimau/Advent-of-Code-2021 ./Advent-of-Code-2021
    cd ./Advent-of-Code-2021
    ```
 
-2. Put your input for the day in a file called `input.txt` and copy it to the appropriate resources
+3. Put your input for the day in a file called `input.txt` and copy it to the appropriate resources
    directory. You can get all inputs from the [official website](https://adventofcode.com/2021) if
    you have not downloaded them already.
 
@@ -94,13 +94,13 @@ If you want to try out one of my solutions, simply follow these steps below:
    cp input.txt ./src/Day-01-Sonar-Sweep/Resources
    ```
 
-3. Nagivate into the appropriate day's directory.
+4. Nagivate into the appropriate day's directory.
 
    ```shell
    cd ./src/Day-01-Sonar-Sweep
    ```
 
-4. Finally, run the code in release mode to take advantage of all optimizations and achieve the best
+5. Finally, run the code in release mode to take advantage of all optimizations and achieve the best
    performance.
 
    ```shell
