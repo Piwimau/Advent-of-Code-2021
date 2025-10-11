@@ -121,7 +121,7 @@ If you have Visual Studio installed on your machine, you may also just open the 
 
 Finally, here are some (non-scientific) benchmarks I created using the fantastic
 [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) package and my main machine (Intel Core
-i9-13900HX, 32GB DDR5-5600 RAM) running Windows 11 24H2. All benchmarks include the time spent for
+i9-13900HX, 32 GB DDR5-5600 RAM) running Windows 11 24H2. All benchmarks include the time spent for
 reading the input from disk, as well as printing the puzzle results (although the output is written
 to `TextWriter.Null` when benchmarking, which is effectively a no-op and rather fast).
 
