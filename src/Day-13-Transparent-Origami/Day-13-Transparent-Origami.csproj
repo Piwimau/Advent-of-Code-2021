@@ -16,7 +16,7 @@
         <WarningLevel>9999</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="BenchmarkDotNet" Version="0.15.6" />
+        <PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
         <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.4.0" />
     </ItemGroup>
     <ItemGroup>
